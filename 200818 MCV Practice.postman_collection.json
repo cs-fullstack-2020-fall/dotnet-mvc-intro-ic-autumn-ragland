@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "a6d4d2eb-2834-430c-9c2c-f736f2ece23e",
+		"name": "200818 MCV Practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Default Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello Message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/HelloWorld/Hello",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"HelloWorld",
+						"Hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello with Param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/HelloWorld/HelloUser?userName=Autumn",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"HelloWorld",
+						"HelloUser"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "Autumn"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
